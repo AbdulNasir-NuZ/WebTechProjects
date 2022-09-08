@@ -1,0 +1,59 @@
+import * as React from
+"https://cdn.skypack.dev/react@17.0.1";
+import * as ReactDOM from
+"https://cdn.skypack.dev/react-dom@17.0.1";
+
+function App() {
+  return /*#__PURE__*/(
+    React.createElement("div", { className: "Wrapper" }, /*#__PURE__*/
+    React.createElement(Card, {
+      img: "https://images.unsplash.com/photo-1621188988909-fbef0a88dc04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      title: "Egg Humberger",
+      descriprion: " Grab your meal with the perfect recipe. This may be your next meal of choice" }), /*#__PURE__*/
+
+
+    React.createElement(Card, {
+      img: "https://images.unsplash.com/photo-1634141613544-001d33883517?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGZvb2RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      title: "Pizzeria",
+      descriprion: " Grab your meal with the perfect recipe. This may be your next meal of choice" }), /*#__PURE__*/
+
+
+    React.createElement(Card, {
+      img: "https://media.istockphoto.com/photos/grilled-chicken-with-fresh-vegetable-salad-with-seeds-in-a-bowl-on-picture-id1329703492?b=1&k=20&m=1329703492&s=170667a&w=0&h=AUD2mymRERsUUSqdOXFfiL_Jh8ediGQX3ehAfV4cX2E=",
+      title: "Avacode and Slice Steak",
+      descriprion: " Grab your meal with the perfect recipe. This may be your next meal of choice" }), /*#__PURE__*/
+
+
+    React.createElement(Card, {
+      img: "https://media.istockphoto.com/photos/salmon-over-watercress-salad-picture-id1316673342?b=1&k=20&m=1316673342&s=170667a&w=0&h=N9RjtyGFuVEW9prXxhSa2wj15SV0j7_M2YzfBuaXrHU=",
+      title: "Rosted Halibut",
+      descriprion: " Grab your meal with the perfect recipe. This may be your next meal of choice" }), /*#__PURE__*/
+
+    React.createElement(Card, {
+      img: "https://images.unsplash.com/photo-1570197571499-166b36435e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHNhbGFkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      title: "Strawberry Spinach Salad",
+      descriprion: " Grab your meal with the perfect recipe. This may be your next meal of choice" }), /*#__PURE__*/
+
+    React.createElement(Card, {
+      img: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      title: "Veg Salad",
+      descriprion: " Grab your meal with the perfect recipe. This may be your next meal of choice" })));
+
+
+
+
+}
+
+function Card(props) {
+  return /*#__PURE__*/(
+    React.createElement("div", { className: "card" }, /*#__PURE__*/
+    React.createElement("div", { className: "card__body" }, /*#__PURE__*/
+    React.createElement("img", { src: props.img, class: "card__image" }), /*#__PURE__*/
+    React.createElement("h2", { className: "card__title" }, props.title, " "), /*#__PURE__*/
+    React.createElement("p", { className: "card__descriprion" }, props.descriprion)), /*#__PURE__*/
+
+    React.createElement("button", { className: "card__btn" }, "View Recipe")));
+
+
+}
+ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('root'));
